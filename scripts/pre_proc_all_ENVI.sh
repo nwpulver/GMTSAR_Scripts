@@ -11,7 +11,7 @@ cat lines.txt | while read line # loop through each file name
 
 do
     y=${line%.N1} # remove the .N1 file extensiion because ENVI_SLC_pre_process does not like them
-    ENVI_SLC_pre_process $y 0s # run the pre processing
+    ENVI_SLC_pre_process $y 0 # run the pre processing
 done
 rm lines.txt
 
